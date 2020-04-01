@@ -89,6 +89,14 @@
 			wp_reset_postdata();
 			?>
 	<p>Eine Probelektion ist mit Voranmeldung jederzeit möglich. Die Kosten dafür betragen 30 Fr.</p>
+	<!--This is the begin of the fitogram widget code -->
+	<div id="widget"></div>
+	<script type="text/javascript" src="https://widget.fitogram.pro/widget.min.js?NoCache=1.0.0.0"></script>
+	<script>
+  		Widget.default.config({ domain: 'auszeit-yoga', loginTarget: 'list-view', trialOnly: 'False', selector: '#widget' });
+  		Widget.default.calendar.new().render();
+	</script>
+	<!-- This is the end of the fitogram widget code -->
 	</section>
 </div> <!-- content -->
 			
