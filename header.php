@@ -14,7 +14,7 @@
 
 <body <?php body_class(); ?>>
 
-    <!-- <div id="bg"><img src="<?php header_image(); ?>"></div> -->
+
     <div id="wrap" class="">
         <nav>
             <!--                   <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>-->
