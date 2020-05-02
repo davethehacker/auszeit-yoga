@@ -1,3 +1,200 @@
-*{padding:0px;margin:0px;font-family:'Open Sans', sans-serif;font-weight:400}h1{font-size:180%;font-weight:500;color:#4ab246}header+h2{padding-top:0}section>h1{padding-top:10px}h2{padding-bottom:5px;padding-top:10px}nav a{font-size:120%}#bg img{position:fixed;top:0;left:0;min-width:100%;height:100%;z-index:-1}#wrap{max-width:1000px;margin-left:auto;margin-right:auto;margin-top:150px;bottom:0}nav{display:inline-block;background-color:rgba(29,29,29,0.7);width:100%;margin-bottom:-5px}nav a{color:#4ab246}ul{margin:0;padding:0;line-height:60px}li{list-style:none;background-color:inherit;padding:0 10px 0 10px;float:left}li.current-menu-item{background-color:inherit}li:hover{background-color:rgba(255,255,255,0.06)}a{text-decoration:none;color:black}a:hover{color:dimgray}nav a:hover{color:#4ab246}#content{background-color:rgba(245,245,245,0.9);overflow:hidden}.news,.events,.single-page{padding:10px;max-width:680px;width:100%;box-sizing:border-box}section article,section .course-category{padding-top:5px}article .time{font-size:95%}article p{line-height:150%;font-size:1em;color:#292929;text-align:justify}header+p{margin-top:10px}.sidebar{padding-top:50px;padding-bottom:10px;width:270px}.attachment a{font-size:0.9em;padding-bottom:5px;display:block;padding-top:0}.iframe-rwd{position:relative;padding-bottom:65.25%;padding-top:30px;height:0;overflow:hidden}.iframe-rwd iframe{position:absolute;top:0;left:0;width:100%;height:100%}.course_item{padding:5px;background-color:rgba(255,255,255,0.2);box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);border-radius:5px 5px}span a+.course_item span{margin-right:0}section{float:left}.post_img{width:270px}.post_img img{width:100%;height:auto}input[class=" field-input"]{border:none;height:30px;background-color:rgba(255,255,255,0.6)}input[class="ccf-submit-button"]{padding:4px}.course_item div{display:inline-block}.course_item div:first-child{width:170px}
+/*
+Theme Name: Monika Walter Auszeit Joga
+Theme URI: none
+Description: Webpage Theme for Monika Walter Auszeit Joga
+Author: David Schmid
+Author URI:
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
 
+h1 {
+  font-size: 180%;
+  font-weight: 500;
+  color: #4ab246;
+}
+
+header + h2 {
+  padding-top: 0;
+}
+
+section > h1 {
+  padding-top: 10px;
+}
+
+h2 {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+nav a {
+  font-size: 120%;
+}
+
+#bg img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#wrap {
+  bottom: 0;
+}
+
+nav {
+  display: inline-block;
+  background-color: rgba(29, 29, 29, 0.7);
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+nav a {
+  color: #4ab246;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+}
+
+li {
+  list-style: none;
+  background-color: inherit;
+  padding: 0 10px 0 10px;
+  float: left;
+}
+
+li.current-menu-item {
+  background-color: inherit;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: dimgray;
+}
+
+nav a:hover {
+  color: #4ab246;
+}
+
+#content {
+  background-color: rgba(245, 245, 245, 0.9);
+  overflow: hidden;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news, .events, .single-page {
+  padding: 10px;
+  max-width: 680px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section article, section .course-category {
+  padding-top: 5px;
+}
+
+article .time {
+  font-size: 95%;
+}
+
+article p {
+  line-height: 150%;
+  font-size: 1em;
+  color: #292929;
+  text-align: justify;
+}
+
+header + p {
+  margin-top: 10px;
+}
+
+.sidebar {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  width: 270px;
+}
+
+.attachment a {
+  font-size: 0.9em;
+  padding-bottom: 5px;
+  display: block;
+  padding-top: 0;
+}
+
+.iframe-rwd {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.course_item {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 5px;
+}
+
+span a + .course_item span {
+  margin-right: 0;
+}
+
+section {
+  float: left;
+}
+
+.post_img {
+  width: 270px;
+}
+
+.post_img img {
+  width: 100%;
+  height: auto;
+}
+
+input[class=" field-input"] {
+  border: none;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input[class=ccf-submit-button] {
+  padding: 4px;
+}
+
+.course_item div {
+  display: inline-block;
+}
+
+.course_item div:first-child {
+  width: 170px;
+}
 /*# sourceMappingURL=style.css.map */

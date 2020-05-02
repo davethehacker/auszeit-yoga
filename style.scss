@@ -45,10 +45,9 @@ nav a{
 	z-index: -1;
 }
 #wrap {
-	max-width: $containerwidth;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 150px;
+	//max-width: $containerwidth;
+	//margin-left: auto;
+	//margin-right: auto;
 	bottom: 0;
 }
 nav {
@@ -90,6 +89,9 @@ nav a:hover{
 #content{
 	background-color: rgba(245, 245, 245, 0.9);
 	overflow: hidden;
+	max-width: $containerwidth;
+	margin-left: auto;
+	margin-right: auto;
 }
 .news,.events, .single-page{
 	padding: 10px;
