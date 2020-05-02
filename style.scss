@@ -10,10 +10,11 @@ $containerwidth: 1200px;
 $color-light: rgba(255, 255, 255, 0.06);
 $color-white: #f5f5f5;
 $color-black:rgba(29, 29, 29, 0.7);
-$color-vivid:#4ab246;
+$color-dark: #137A03;
+$color-vivid:#42b72d;
 
 html{
-	background-color: #42b72d;
+	background-color: $color-vivid;
 }
 *{
 	padding: 0px;
@@ -55,12 +56,12 @@ nav a{
 }
 nav {
 	display: inline-block;
-	background-color: $color-black;
+	background-color: $color-dark;
 	width: 100%;
 	margin-bottom: -5px;
 }
 nav a{
-	color: $color-vivid;
+	color: white;
 }
 ul {
 	margin: 0;
