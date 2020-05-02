@@ -17,7 +17,6 @@
 
     <div id="wrap" class="">
         <nav>
-            <!--                   <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>-->
             <?php wp_nav_menu( array(
 					'menu_class' => 'topmenu', //Fügt eine Klasse zum Menü hinzu
 					'container_id' => 'navwrap', //Legt ID von dem Container fest, der das komplette Menü umgibt
