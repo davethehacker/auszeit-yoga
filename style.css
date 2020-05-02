@@ -5,6 +5,10 @@ Description: Webpage Theme for Monika Walter Auszeit Joga
 Author: David Schmid
 Author URI:
 */
+html {
+  margin-top: 0;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -96,7 +100,7 @@ nav a:hover {
 #content {
   background-color: rgba(245, 245, 245, 0.9);
   overflow: hidden;
-  max-width: 1000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -130,7 +134,7 @@ header + p {
 .sidebar {
   padding-top: 50px;
   padding-bottom: 10px;
-  width: 270px;
+  width: 250px;
 }
 
 .attachment a {

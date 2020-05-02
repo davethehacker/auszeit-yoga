@@ -6,13 +6,15 @@ Author: David Schmid
 Author URI:
 */
 //parameters
-$containerwidth: 1000px;
+$containerwidth: 1200px;
 $color-light: rgba(255, 255, 255, 0.06);
 $color-white: #f5f5f5;
 $color-black:rgba(29, 29, 29, 0.7);
 $color-vivid:#4ab246;
 
-
+html{
+	margin-top: 0;
+}
 *{
 	padding: 0px;
 	margin: 0px;
@@ -118,7 +120,7 @@ header + p{
 .sidebar{
 	padding-top: 50px;
 	padding-bottom: 10px;
-	width: 270px;
+	width: 250px;
 }
 .attachment a{
 	font-size: 0.9em;
