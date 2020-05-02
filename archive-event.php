@@ -1,11 +1,24 @@
 <?php get_header(); ?>
 
 --><div id="content">
-	<section class="events">
-		<h1>Angebote</h1>
-		<p>Für weitere Informationen zu den Kursen klicke auf den Kursnamen.</p>
-		<p>Anmeldungen können direkt über den entsprechenden Kurseintrag oder auch Telefonisch vorgenommen werden.</p>
-			<?php
+    <section class="events">
+        <h1>Angebote</h1>
+        <!--This is the begin of the fitogram widget code -->
+        <div id="widget"></div>
+        <script type="text/javascript" src="https://widget.fitogram.pro/widget.min.js?NoCache=1.0.0.0"></script>
+        <script>
+        Widget.default.config({
+            domain: 'auszeit-yoga',
+            loginTarget: 'list-view',
+            trialOnly: 'False',
+            selector: '#widget'
+        });
+        Widget.default.calendar.new().render();
+        </script>
+        <!-- This is the end of the fitogram widget code -->
+        <p>Für weitere Informationen zu den Kursen klicke auf den Kursnamen.</p>
+        <p>Anmeldungen können direkt über den entsprechenden Kurseintrag oder auch Telefonisch vorgenommen werden.</p>
+        <?php
 			// WP_Query arguments
 			$args = array (
 				'post_type'              => 'page',
@@ -21,11 +34,11 @@
 					$query->the_post();
 						// course type formating on here!
 					?>
-					
-					<div class='course-category' >
-					<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
-					<?php
+
+        <div class='course-category'>
+            <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
+            <?php
 					$post_object = get_post();
 					//var_dump($post_object);
 					$pagename = get_the_title();
@@ -57,18 +70,18 @@
 									
 									// content of indivitual course in here!
 									?>
-									<div class="course_item">
-										<a href="<?php the_permalink() ?>">
-											<?php if(get_field('serie')){ ?>
-												<div><?php the_field('start_date') ?> - <?php the_field('end_date') ?></div>
-												<div><?php the_field('start_time') ?> - <?php the_field('end_time') ?></div>
-											<?php }else{ ?>
-												<div><?php the_field('wochentag') ?></div>
-												<div><?php the_field('start_time') ?> - <?php the_field('end_time') ?></div>
-											<?php } ?>
-										</a>
-									</div>
-									<?php
+            <div class="course_item">
+                <a href="<?php the_permalink() ?>">
+                    <?php if(get_field('serie')){ ?>
+                    <div><?php the_field('start_date') ?> - <?php the_field('end_date') ?></div>
+                    <div><?php the_field('start_time') ?> - <?php the_field('end_time') ?></div>
+                    <?php }else{ ?>
+                    <div><?php the_field('wochentag') ?></div>
+                    <div><?php the_field('start_time') ?> - <?php the_field('end_time') ?></div>
+                    <?php } ?>
+                </a>
+            </div>
+            <?php
 								}
 								
 							}
@@ -88,16 +101,9 @@
 			// Restore original Post Data
 			wp_reset_postdata();
 			?>
-	<p>Eine Probelektion ist mit Voranmeldung jederzeit möglich. Die Kosten dafür betragen 30 Fr.</p>
-	<!--This is the begin of the fitogram widget code -->
-	<div id="widget"></div>
-	<script type="text/javascript" src="https://widget.fitogram.pro/widget.min.js?NoCache=1.0.0.0"></script>
-	<script>
-  		Widget.default.config({ domain: 'auszeit-yoga', loginTarget: 'list-view', trialOnly: 'False', selector: '#widget' });
-  		Widget.default.calendar.new().render();
-	</script>
-	<!-- This is the end of the fitogram widget code -->
-	</section>
+            <p>Eine Probelektion ist mit Voranmeldung jederzeit möglich. Die Kosten dafür betragen 30 Fr.</p>
+
+    </section>
 </div> <!-- content -->
-			
+
 <?php get_footer(); ?>
