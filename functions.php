@@ -1,6 +1,8 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 
+add_filter( 'auto_update_plugin', '__return_true' );
+define( 'AUTOMATIC_UPDATER_DISABLED', false );
 
 
 function register_my_menus() {
